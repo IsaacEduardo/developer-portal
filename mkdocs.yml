@@ -1,0 +1,29 @@
+site_name: Portal da Plataforma de Desenvolvimento
+site_description: Documentação central para os padrões, templates e pipelines do curso.
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.expand
+    - content.code.copy
+
+nav:
+  - Início: index.md
+  - Golden Paths:
+    - 'Como criar uma API (Projeto 1)': golden-paths/api-projeto-1.md
+    - 'Como criar Microserviços (Projeto 2)': golden-paths/microservicos-projeto-2.md
+    - 'Como usar Pipelines (Projeto 5)': golden-paths/pipelines.md
+    - 'Tutorial: Chat App': golden-paths/run-chat-app.md
+  - Catálogo de Serviços: catalogo.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
